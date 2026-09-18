@@ -87,46 +87,53 @@
 /* Uncomment out the line below to help debug layout issues */
 /*@use './imports/_debug';*/
 
-/* --- CORRETTIVO HERBARIUM LÓRIEN --- */
+/* --- PALETTE ERBORISTERIA & TOLKIEN --- */
+
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Marcellus&display=swap');
 
-/* Font generale e sfondo pagina */
+/* Sfondo generale della pagina (verde antico) */
 body {
-  font-family: 'Marcellus', serif !important;
-  background-color: #F2EDE0 !important;
-  color: #2C221E !important;
+    font-family: 'Marcellus', serif !important;
+    background-color: #2D4A3E !important;
+    color: #F4F0EA !important;
 }
 
 /* Titoli eleganti */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Cormorant Garamond', serif !important;
+    font-family: 'Cormorant Garamond', serif !important;
+    color: #F4F0EA !important;
 }
 
 /* Titolo grande dell'Header sulla foto */
 .jumbotron h1, .pv4 h1, header h1, [class*="title"] {
-  background-color: transparent !important;
-  color: #ffffff !important;
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.7) !important;
+    background-color: transparent !important;
+    color: #ffffff !important;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8) !important;
 }
 
 /* Sottotitolo sulla foto */
 .jumbotron p, header p, [class*="sub-title"] {
-  background-color: transparent !important;
-  color: #F2EDE0 !important;
-  text-shadow: 1px 1px 6px rgba(0,0,0,0.7) !important;
+    background-color: transparent !important;
+    color: #F4F0EA !important;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.8) !important;
 }
 
-/* Cambio colore logo "KALDI" -> Bianco o Oro */
+/* Logo in alto a sinistra (color oro antico) */
 nav a:first-child, .logo {
-  color: #ffffff !important;
-  font-weight: bold !important;
+    color: #D4AF37 !important;
+    font-weight: bold !important;
 }
 
-/* Barra di navigazione in alto */
+/* Barra di navigazione in alto (verde foresta profondo) */
 nav, header {
-  background-color: #2D3B30 !important;
+    background-color: #1B3B2B !important;
 }
 
+/* Scritte del menu in alto a destra (ben leggibili, color avorio) */
 nav a {
-  color: #F2EDE0 !important;
+    color: #F4F0EA !important;
+}
+
+nav a:hover {
+    color: #D4AF37 !important; /* Diventano d oro quando ci passi sopra col mouse */
 }
