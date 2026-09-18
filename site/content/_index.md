@@ -20,7 +20,7 @@ intro:
   text: jjjj
 products:
   - text: ffk3jglj3
-    image: img/about-shade-grown.jpg
+    image: img/gemini_generated_image_2tus6j2tus6j2tus.jpg
 values:
   heading: 2jrj2
   text: fjff2
