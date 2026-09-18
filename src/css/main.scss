@@ -86,3 +86,32 @@
 
 /* Uncomment out the line below to help debug layout issues */
 /*@use './imports/_debug';*/
+
+/* --- NUOVO STILE HERBARIUM LÓRIEN --- */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Proza+Libre:wght@400;600&display=swap');
+
+body {
+  font-family: 'Proza Libre', sans-serif !important;
+  background-color: #fcfbf7 !important;
+  color: #2c3531 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cormorant Garamond', serif !important;
+  color: #1b3b2b !important;
+}
+
+/* Colore evidenziatori e bottoni arancioni -> Verde Erboristeria */
+.bg-off-white { background-color: #f4f1e8 !important; }
+.bg-primary, .bg-gold { background-color: #3b5a45 !important; }
+.primary, .gold { color: #3b5a45 !important; }
+.btn, button, a.button {
+  background-color: #3b5a45 !important;
+  color: #ffffff !important;
+}
+/* Pulsanti e dettagli */
+.btn, button, a.button {
+  background-color: #3b5a45 !important;
+  color: #ffffff !important;
+  border-radius: 4px !important;
+}
