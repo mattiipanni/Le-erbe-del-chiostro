@@ -198,6 +198,21 @@ section.newsletter, .newsletter, form[name="newsletter"] {
 }
 
 
+/* Inserimento pulito dell'immagine della cornice intera */
+.hero-image-container {
+    text-align: center;
+    background-color: #D3E0D7;
+    padding: 2rem 1rem;
+}
+.hero-image-container img {
+    max-width: 900px;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+
 
 
 
