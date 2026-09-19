@@ -1,9 +1,9 @@
 ---
 title: Herbarium Lórien
-subtitle: Viriditas in herbis est
-image: img/gemini_generated_image_u8j59eu8j59eu8j5.jpg
+subtitle: '"Viriditas in herbis est" - Santa Ildegarda '
+image: img/gemini_generated_image_pub0tmpub0tmpub0.jpg
 blurb:
-  heading: Perchè codesto nome?
+  heading: "Perchè mai? "
   text: >
     Un erbario è, prima di tutto, un archivio di sopravvivenza: il luogo fisico
     e sicuro in cui la conoscenza viene sottratta al tempo e alla dissoluzione.
