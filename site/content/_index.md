@@ -1,7 +1,7 @@
 ---
 title: Herbarium Lórien
 subtitle: '"Viriditas in herbis est" - Santa Ildegarda '
-image: img/gemini_generated_image_pub0tmpub0tmpub0.jpg
+image: img/gemini_generated_image_pqgvdepqgvdepqgv.jpg
 blurb:
   heading: "Perchè mai? "
   text: >
