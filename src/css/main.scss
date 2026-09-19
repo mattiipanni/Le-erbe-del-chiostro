@@ -89,95 +89,89 @@
 
 
 
-
-
 /* ==========================================================================
-HERBARIUM LÔRIEN - FOGLIO DI STILE DEFINITIVO (TOLKIEN & ERBORISTERIA)
+HERBARIUM LÔRIEN - FOGLIO DI STILE DEFINITIVO V2
 ========================================================================== */
 
-/* Importazione font eleganti (Cormorant Garamond e Marcellus) */
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Marcellus&display=swap');
 
-/* Sfondo generale della pagina: Verde salvia tenue e rilassante */
+/* Forziamo lo sfondo verde salvia tenue su tutta la pagina e i contenitori principali */
+html, body, .main-content, main, section {
+    background-color: #D3E0D7 !important; /* Verde salvia tenue e luminoso */
+}
+
 body {
     font-family: 'Cormorant Garamond', serif !important;
-    font-size: 1.2rem !important;
-    background-color: #DCE5DE !important; /* Verde salvia tenue e luminoso */
-    color: #233325 !important; /* Testo verde scuro per massima leggibilità */
+    font-size: 1.25rem !important;
+    color: #1A2E20 !important; /* Verde scuro intenso per i testi */
     line-height: 1.8 !important;
 }
 
-/* Titoli generali in stile antico */
-h1, h2, h3, h4, h5, h6 {
+/* Tutti i titoli (inclusi quelli a sinistra come "Perché codesto nome?") */
+h1, h2, h3, h4, h5, h6, .site-title, [class*="title"] {
     font-family: 'Marcellus', serif !important;
-    color: #1A281E !important; 
+    color: #112216 !important; /* Verde bosco scurissimo, elegante e leggibile */
     letter-spacing: 0.05em !important;
 }
 
-/* Paragrafi e testi normali (perfettamente leggibili sul verde salvia tenue) */
-p, li, span {
-    color: #233325 !important; 
+/* Paragrafi e testi normali */
+p, li, span, div {
+    color: #1A2E20 !important; /* Testo verde scuro erboristeria */
 }
 
-/* BLOCCO TITOLO SULLA FOTO: Rimozione totale dell'arancione e testo chiaro con ombra */
-.jumbotron h1, header h1, [class*="title"] {
+/* TITOLO SOPRA LA FOTO PRINCIPE (Lôrien) */
+.jumbotron h1, header h1, .hero h1 {
     background: transparent !important;
     background-color: transparent !important;
     color: #F8F6F0 !important; /* Bianco pergamena */
     font-family: 'Marcellus', serif !important;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8) !important;
-    padding: 0 !important;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9) !important;
 }
 
-/* Sottotitolo sulla foto */
-.jumbotron p, header p, [class*="sub-title"] {
+.jumbotron p, header p, .hero p {
     background: transparent !important;
     background-color: transparent !important;
     color: #E2DBD0 !important; 
     font-family: 'Cormorant Garamond', serif !important;
     font-style: italic !important;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8) !important;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9) !important;
 }
 
-/* Barra di navigazione in alto (Verde salvia coordinato) */
+/* Barra di navigazione in alto */
 nav, header {
-    background-color: #C2D1C7 !important; 
-    border-bottom: 1px solid #9EB3A4 !important;
+    background-color: #BDCEC3 !important; /* Verde salvia medio coordinato */
+    border-bottom: 1px solid #95AD9E !important;
 }
 
-/* Scritte del menu in alto */
-nav a {
-    color: #233325 !important;
+/* Scritte del menu in alto a destra */
+nav a, header a {
+    color: #1A2E20 !important;
     font-family: 'Marcellus', serif !important;
     font-weight: 600 !important;
 }
 
-/* Passaggio del mouse sui link del menu */
 nav a:hover {
-    color: #4A634D !important;
+    color: #3B5342 !important;
     text-decoration: underline !important;
 }
 
-/* Logo in alto a sinistra */
-nav a:first-child, .logo {
-    color: #1A281E !important;
+/* Logo in alto a sinistra (elimina quel rettangolo arancione residuo) */
+nav a:first-child, .logo, .site-brand {
+    color: #1A2E20 !important;
+    background-color: transparent !important;
     font-weight: bold !important;
 }
 
 /* Footer in stile erboristeria elfica */
 footer {
-    background-color: #233325 !important; 
-    color: #E3EBE6 !important; 
+    background-color: #1A2E20 !important; 
+    color: #D3E0D7 !important; 
     border-top: 1px solid #C5A059 !important; /* Linea oro antico */
     font-family: 'Cormorant Garamond', serif !important;
 }
 
 footer a {
     color: #D4AF37 !important; 
-}
-
-footer a:hover {
-    color: #FFFFFF !important;
 }
 
 /* Pulizia sezioni superflue */
