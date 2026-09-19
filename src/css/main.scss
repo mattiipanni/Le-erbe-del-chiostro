@@ -200,3 +200,14 @@ section.newsletter, .newsletter, form[name="newsletter"] {
     margin: 0 auto !important;
     border-radius: 4px;
 }
+
+/* ==========================================================================
+   FORZATURA IMMAGINE INTERA SENZA TAGLI NELLA HOME
+   ========================================================================== */
+.hero, .jumbotron, section.hero, div.hero {
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-color: #D3E0D7 !important; /* Riempie i lati vuoti con il verde salvia */
+    min-height: 75vh !important;
+}
