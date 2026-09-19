@@ -178,3 +178,25 @@ footer a {
 section.newsletter, .newsletter, form[name="newsletter"] {
     display: none !important;
 }
+
+/* ==========================================================================
+   CORREZIONE VISUALIZZAZIONE IMMAGINE COMPLETA
+   ========================================================================== */
+
+/* Se il template usa la foto come sfondo di un blocco banner (jumbotron/hero) */
+.jumbotron, header.hero, .hero-banner {
+    background-size: contain !important;       /* Mostra l'immagine intera senza tagliarla */
+    background-repeat: no-repeat !important;   /* Evita che si ripeta */
+    background-position: center center !important; /* La centra perfettamente */
+    min-height: 500px !important;              /* Dà abbastanza spazio per vederla bene */
+}
+
+/* Regole per eventuali immagini inserite direttamente come tag <img> */
+.hero img, .jumbotron img, img.header-image {
+    width: 100% !important;
+    max-width: 900px !important;
+    height: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
+    border-radius: 4px;
+}
