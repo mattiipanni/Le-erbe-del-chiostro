@@ -87,88 +87,100 @@
 /* Uncomment out the line below to help debug layout issues */
 /*@use './imports/_debug';*/
 
---- PALETTE VERDE ANTICO LUMINOSO & ERBORISTERIA --- */
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Marcellus&display=swap');
 
-/* Sfondo generale della pagina: un verde antico/salvia chiaro molto morbido */
+
+
+
+/* ==========================================================================
+HERBARIUM LÔRIEN - FOGLIO DI STILE PRINCIPE (ISPIRAZIONE TOLKIENIANA)
+Palette: Verde Salvia Antico, Pergamena, Oro Antico ed Erboristeria
+========================================================================== */
+
+/* Importazione font eleganti e sferici/elfici (Cormorant Garamond e Marcellus) */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Marcellus&display=swap');
+
+/* Sfondo generale della pagina: Verde salvia antichizzato, morbido e rilassante /
 body {
-    font-family: 'Marcellus', serif !important;
-    background-color: #DCE5DE !important; /* Verde antico chiaro e luminoso */
-    color: #2F3E32 !important; /* Testo verde scuro/grafite per massima leggibilità */
+font-family: 'Cormorant Garamond', serif !important;
+font-size: 1.2rem !important;
+background-color: #E3EBE6 !important; / Verde salvia chiaro molto luminoso /
+color: #233325 !important; / Verde scuro profondo per una leggibilità perfetta */
+line-height: 1.8 !important;
 }
 
-/* Titoli eleganti */
+/* Titoli eleganti in stile antico/elfico /
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Cormorant Garamond', serif !important;
-    color: #1E3023 !important;
+font-family: 'Marcellus', serif !important;
+color: #1A281E !important; / Verde bosco scurissimo e solenne */
+letter-spacing: 0.05em !important;
 }
 
-/* Titolo grande dell'Header sulla foto */
-.jumbotron h1, .pv4 h1, header h1, [class*="title"] {
-    background-color: transparent !important;
-    color: #ffffff !important;
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.8) !important;
+/* Paragrafi e testi normali /
+p, li, span {
+color: #2C3E30 !important; / Verde scuro erboristeria, altamente leggibile */
 }
 
-/* Sottotitolo sulla foto */
-.jumbotron p, header p, [class*="sub-title"] {
-    background-color: transparent !important;
-    color: #F4F0EA !important;
-    text-shadow: 1px 1px 6px rgba(0,0,0,0.8) !important;
+/* Titolo grande dell'Header sulla foto (es. Herbarium Lôrien) /
+.jumbotron h1, header h1, [class="title"] {
+background-color: transparent !important;
+color: #F8F6F0 !important; /* Bianco pergamena luminoso per contrastare la foto scura */
+font-family: 'Marcellus', serif !important;
+text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8) !important;
+}
+
+/* Sottotitolo sulla foto /
+.jumbotron p, header p, [class="sub-title"] {
+background-color: transparent !important;
+color: #E2DBD0 !important; /* Pergamena chiara */
+font-family: 'Cormorant Garamond', serif !important;
+font-style: italic !important;
+text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8) !important;
+}
+
+/* Barra di navigazione in alto (Verde salvia medio/antico) /
+nav, header {
+background-color: #C2D1C7 !important; / Verde salvia medio ed elegante */
+border-bottom: 1px solid #9EB3A4 !important;
+}
+
+/* Scritte del menu in alto */
+nav a {
+color: #233325 !important;
+font-family: 'Marcellus', serif !important;
+font-weight: 600 !important;
+}
+
+/* Effetto al passaggio del mouse sui link del menu /
+nav a:hover {
+color: #5C765E !important; / Tonalità foglia di tè/salvia scuro */
+text-decoration: underline !important;
 }
 
 /* Logo in alto a sinistra */
 nav a:first-child, .logo {
-    color: #4A6B53 !important;
-    font-weight: bold !important;
+color: #1A281E !important;
+font-weight: bold !important;
 }
 
-/* Barra di navigazione in alto (verde salvia medio per staccare leggermente) */
-nav, header {
-    background-color: #C8D7CE !important;
-    border-bottom: 1px solid #A3B8AC !important;
-}
-
-/* Scritte del menu in alto a destra (ben leggibili e scure) */
-nav a {
-    color: #2F3E32 !important;
-    font-weight: 600 !important;
-}
-
-nav a:hover {
-    color: #1E3023 !important; 
-}
-
-/* --- PULIZIA: NASCONDI SEZIONI COMMERCIALI --- */
-section.newsletter, .newsletter, form[name="newsletter"] {
-    display: none !important;
-}
-
-a[href*="products"], a[href*="offers"] {
-    display: none !important;
-}
-
+/* Footer in stile antico/erboristeria /
 footer {
-    background-color: #C8D7CE !important;
-    color: #2F3E32 !important;
-    border-top: 1px solid #A3B8AC !important;
-    
-/* --- PULIZIA DEL BLOG: NASCONDI PRODOTTI, NEWSLETTER E SEZIONI COMMERCIALI --- */
+background-color: #233325 !important; / Verde bosco profondo /
+color: #E3EBE6 !important; / Testo chiaro color pergamena/salvia chiaro /
+border-top: 1px solid #C5A059 !important; / Sottile linea oro antico */
+font-family: 'Cormorant Garamond', serif !important;
+}
 
-/* 1. Nasconde il box della Newsletter nel footer */
+footer a {
+color: #D4AF37 !important; /* Dettagli color oro antico */
+}
+
+footer a:hover {
+color: #FFFFFF !important;
+}
+
+/* Pulizia opzionale: nasconde sezioni superflue come newsletter o prodotti di default se non servono */
 section.newsletter, .newsletter, form[name="newsletter"] {
-    display: none !important;
-}
+display: none !important;
 
-/* 2. Nasconde la voce "Products" e "Latest offers" dai menu o dal footer se non servono */
-/* (Se vuoi mantenere la voce nel menu in alto, rimuovi questa riga o personalizzala) */
-a[href*="products"], a[href*="offers"] {
-    display: none !important;
-}
-
-/* 3. Rende il footer molto più pulito e minimal, stile antico eremita */
-footer {
-    background-color: #1B3B2B !important;
-    border-top: 1px solid #D4AF37; /* Una sottile linea color oro antico */
-}
+    }
